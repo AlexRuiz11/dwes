@@ -10,26 +10,25 @@
 
 define("Constante1", 169);
 define("Constante2", 193);
-$Primo=false;
+$contador=1;
 
-for ( $i = 1; $i < Constante1; $i = $i + 1) {
+for ( $i = 2; $i <Constante2; $i = $i + 1) {
 
-if(Constante1%$i){
+if(Constante2%$i ==0){
 
     echo $i ,"<br>";
-
-}else{
-    $Primo=true;
-
-}
-
+    $contador=$contado +1;
 
 
 }
 
-if($Primo=true){
 
-    echo "EL numero ", Constante1, " es primo.";
+
+}
+
+if($contador==1){
+
+    echo "EL numero ", Constante2, " es primo.";
 }
 
     ?>
