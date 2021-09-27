@@ -8,10 +8,13 @@
 <body>
 <?php
 
-$y =999;
-$x = 147;
+define("CONVERSOR_PESETAS", 166.386);
 
-echo $x, "<br>",$y ," <br>SUMA: ", $y+$x ," <br>RESTA: ", $y-$x," <br>MULTI: ", $y*$x," <br>DIVI: ", $y/$x;
+$euros = 147;
+$conversor =$euros*CONVERSOR_PESETAS;
+
+echo "<p>", $conversor, " pesetas</p> ";
+
     ?>
 </body>
 </html>

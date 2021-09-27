@@ -8,10 +8,15 @@
 <body>
 <?php
 
-$y =999;
-$x = 147;
+$divisible=3;
 
-echo $x, "<br>",$y ," <br>SUMA: ", $y+$x ," <br>RESTA: ", $y-$x," <br>MULTI: ", $y*$x," <br>DIVI: ", $y/$x;
+for ( $i = 1; $i < 10; $i = $i + 1) {
+   if($i%$divisible==0){
+
+    echo $i, "<br>";
+   }
+}
+
     ?>
 </body>
 </html>
