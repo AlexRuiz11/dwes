@@ -9,26 +9,37 @@
 <?php
 
 
-Palindromo("Hola");
+$palabra="aaaaaaab";
 
+
+if(Palindromo($palabra)== 1){
+    echo $palabra ." Es un palindromo";
+    
+
+}else{
+    echo $palabra ." No es un palindromo";
+
+}
 
 function Palindromo ($a) {
        
-   $validar=true;
-    
-
-    $arr = str_split($a);
-    $arr1 = str_split( strrev($a));
-    for($i=1; $i <0;$i+1){
+    $validar=true;
+     
+     $arr = str_split($a);
+ 
+     $arr1 = str_split( strrev($a));
+    for($i =0;$i<count($arr);$i++){
         if($arr[$i]!=$arr1[$i]){
-            $validar= false;
+            $validar=false;
         }
 
     }
-
-
     
-}
+   return $validar;
+    
+     
+ }
+
 ?>
     
 </body>
