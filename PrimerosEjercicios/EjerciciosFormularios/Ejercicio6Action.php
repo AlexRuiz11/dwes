@@ -1,18 +1,49 @@
 <?php
 
 if (is_array($_GET["como"]) ) { 
-    echo "<ul>";
+    $contador=0;
     foreach ( $_GET["como"] as $como ) { 
-       
-            echo "<li>";
-            echo $como; 
-            echo "</li>"; 
+
+       if($como=="Correcto"){
+        $contador++;
+       }
+            
         
      }
+     foreach ( $_GET["como1"] as $como ) { 
 
-    
-     echo "</ul>";
- //NO se le bien la ruta    
+        if($como=="Correcto"){
+         $contador++;
+        }
+             
+         
+      }
+      foreach ( $_GET["como2"] as $como ) { 
+
+        if($como=="Correcto"){
+         $contador++;
+        }
+             
+         
+      }
+      foreach ( $_GET["como3"] as $como ) { 
+
+        if($como=="Correcto"){
+         $contador++;
+        }
+             
+         
+      }
+      foreach ( $_GET["como4"] as $como ) { 
+
+        if($como=="Correcto"){
+         $contador++;
+        }
+             
+         
+      }
+
+     echo "<h1> Su nota es: "  . $contador;
 }
 
 
